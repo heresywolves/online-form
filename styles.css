@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: 'Ubuntu Condensed', sans-serif;
+}
+
+body {
+  display: flex;
+  background-color: white;
+}
+
+.left-side {
+  position: relative;
+}
+
+.left-side img[src="img/leaves.jpg"] {
+  object-fit: cover;
+  height: 100vh;
+  width: 40vw;
+  margin-bottom: 0;
+}
+
+#test {
+  background-color: gray;
+}
+
+.logo {
+  font-family: 'Kaushan Script', cursive;
+  display: flex;
+  margin-top: 200px;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0px;
+  height: 150px;
+  width: 100%;
+  background-color: rgba(0,0,0,0.5);
+  font-size: 50px;
+  color: white;
+}
+
+.logo img {
+  width: 50px;
+  position: relative;
+  top: 10px;
+  left: 10px;
+}
+
+.logo p {
+  position: relative;
+  right: 10px;
+}
+
+#credit {
+  position: absolute;
+  color: white;
+  top: 5px;
+}
+
+.right-side {
+  padding-top: 100px;
+  background-color: rgb(240, 240, 240);
+  font-size: 25px;
+}
+
+.right-side p {
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+div.form {
+  background-color: white;
+}
+
+#stand-out-text {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.right-side p:last-child {
+  font-size: 20px;
+}
