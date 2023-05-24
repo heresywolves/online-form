@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
 
 * {
   margin: 0;
@@ -8,7 +8,8 @@
 }
 
 :root {
-  font-family: 'Ubuntu Condensed', sans-serif;
+  font-family: 'DM Sans', sans-serif;
+  /* font-family: 'Ubuntu Condensed', sans-serif; */
 }
 
 body {
@@ -33,7 +34,9 @@ body {
 }
 
 .logo {
-  font-family: 'Kaushan Script', cursive;
+  font-family: 'Ubuntu Condensed', sans-serif;
+  letter-spacing: 5px;
+  font-weight: 900;
   display: flex;
   margin-top: 200px;
   justify-content: center;
@@ -48,15 +51,14 @@ body {
 }
 
 .logo img {
-  width: 50px;
+  width: 70px;
   position: relative;
   top: 10px;
-  left: 10px;
+  right: 10px;
 }
 
 .logo p {
   position: relative;
-  right: 10px;
 }
 
 .left-side {
@@ -72,9 +74,10 @@ body {
 }
 
 .right-side {
-  padding-top: 100px;
-  background-color: rgb(240, 240, 240);
-  font-size: 25px;
+  padding-top: 80px;
+  background-color: black;
+  font-size: 20px;
+  color: rgb(200,200,200);
 }
 
 .right-side p {
@@ -83,14 +86,87 @@ body {
 }
 
 div.form {
-  background-color: white;
+  background-color: rgb(26, 26, 26);
+  font-size: 25px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 #stand-out-text {
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: 40px;
+  margin-bottom: 70px;
 }
 
-.right-side p:last-child {
+.right-side p:last-child:not(.form p) {
   font-size: 20px;
+}
+
+.field-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.form .row {
+  display: flex;
+  gap: 50px;
+  margin-left: 40px;
+  margin-top: 20px;
+}
+
+.form label {
+  font-size: 15px;
+  color: rgb(141, 141, 141);
+  margin-bottom: 2px;
+  font-family: 'Ubuntu Condensed', sans-serif;
+}
+
+.form input {
+  width: 20vw;
+  height: 30px;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgb(170, 170, 170);
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: rgb(170, 170, 170);
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: rgb(170, 170, 170);
+}
+
+#fields-tip {
+  margin-top: 15px;
+  font-size: 12px;
+  color: rgb(141, 141, 141);
+}
+
+button {
+  margin-left: 40px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 7px 30px;
+  font-size: 20px;
+  background-color: rgb(129, 0, 0);
+  border-style: none;
+  color: rgb(236, 236, 236);
+  border-radius: 2px;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(160, 0, 0);
+}
+
+button:active {
+  background-color: rgb(172, 50, 50)
+}
+
+.right-side a {
+  color: rgb(179, 0, 0);
+  font-weight: 800;
 }

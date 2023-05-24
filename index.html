@@ -15,7 +15,7 @@
     <img src="img/leaves.jpg" alt="green-leaves">
     <div class="logo">
       <img src="img/logo.svg" alt="temdev-logo">
-      <p>Temdev</p>
+      <p>greenside</p>
     </div>
     <p id="credit">Photo by Halie West on Unsplash</p>
   </div>
@@ -26,10 +26,52 @@
     <p>Sign up <em>now</em> to get started.</p>
     <p id="stand-out-text">You <em>know</em> you want to.</p>
     <div class="form">
-      This is where the from is going
+      <p>Let's do this!</p>
 
+      <form action="/action_page.php" method="post" id="myForm">
+        <div class="row">
+          <div class="field-container">
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname">
+          </div>
+          <div class="field-container">
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lname">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="field-container">
+            <label for="email">* Email:</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="field-container">
+            <label for="phone">Phone number:</label>
+            <input 
+            type="tel" 
+            id="phone" 
+            name="phone" 
+            placeholder=" 123-456-7890">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="field-container">
+            <label for="password">* Password:</label>
+            <input type="password" id="password" placeholder=" 8 characters minimum" name="password" minlength="8" required>
+          </div>
+          <div class="field-container">
+            <label for="password">* Confirm password:</label>
+            <input type="password" id="password" name="password" minlength="8" required>
+          </div>
+        </div>
+        <p id="fields-tip">Fields with * are required</p>
+
+
+      </form>
     </div>
-    <button>Create Account</button>
+
+    <button type="submit" form="myForm" value="Submit">Create Account</button>
     <p>Already have an account? <a href="#">Log in</a></p>
 
   </div>
