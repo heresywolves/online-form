@@ -45,7 +45,7 @@ body {
   top: 0px;
   height: 150px;
   width: 100%;
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0, 0, 0, 0.5);
   font-size: 50px;
   color: white;
 }
@@ -77,7 +77,7 @@ body {
   padding-top: 80px;
   background-color: black;
   font-size: 20px;
-  color: rgb(200,200,200);
+  color: rgb(200, 200, 200);
 }
 
 .right-side p {
@@ -125,16 +125,20 @@ div.form {
   height: 30px;
 }
 
-::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: rgb(170, 170, 170);
-  opacity: 1; /* Firefox */
+  opacity: 1;
+  /* Firefox */
 }
 
-:-ms-input-placeholder { /* Internet Explorer 10-11 */
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
   color: rgb(170, 170, 170);
 }
 
-::-ms-input-placeholder { /* Microsoft Edge */
+::-ms-input-placeholder {
+  /* Microsoft Edge */
   color: rgb(170, 170, 170);
 }
 
@@ -219,22 +223,51 @@ button:active {
 
 /* mobile */
 
-@media screen and (max-width: 800px)
-{
+@media screen and (max-width: 800px) {
+  body {
+    background-color: black;
+  }
+
   .left-side {
     display: none;
   }
 
   .field-container {
     width: auto;
+    margin-right: 35px;
+  }
+
+  .form .row {
+    flex-direction: column;
+    gap: 0px;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 0;
   }
 
   .form input {
+    flex: 1;
+    max-width: 400px;
     width: auto;
+    height: 40px;
+    font-size: 30px;
+  }
+
+  .form input:focus {
+    outline: none;
   }
 
   .right-side {
     height: 100vh;
+  }
+
+  .form label {
+    margin-top: 20px;
+    font-size: 18px;
+  }
+
+  input::placeholder {
+    font-size: 18px;
   }
 
 }
