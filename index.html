@@ -58,11 +58,20 @@
         <div class="row">
           <div class="field-container">
             <label for="password">* Password:</label>
-            <input type="password" id="password" placeholder=" 8 characters minimum" name="password" minlength="8" required>
+            <input type="password" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" name="password" minlength="8" required>
+            <div class="password-validation">
+              <p id="letter" class="invalid">A lowercase letter</p>
+              <p id="capital" class="invalid">A capital (uppercase) letter</p>
+              <p id="number" class="invalid">A number</p>
+              <p id="length" class="invalid">Minimum 8 characters</p>
+            </div>
           </div>
           <div class="field-container">
-            <label for="password">* Confirm password:</label>
-            <input type="password" id="password" name="password" minlength="8" required>
+            <label for="second-password">* Confirm password:</label>
+            <input type="password" id="second-password" name="second-passord" minlength="8" required>
+            <div class="second-password-validation">
+              <p class="match invalid">Password match</p>
+            </div>
           </div>
         </div>
         <p id="fields-tip">Fields with * are required</p>
@@ -75,7 +84,7 @@
     <p>Already have an account? <a href="#">Log in</a></p>
 
   </div>
-
+<script rel="javascript" src="javascript.js"></script>
 </body>
 
 </html>

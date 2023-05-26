@@ -170,3 +170,71 @@ button:active {
   color: rgb(179, 0, 0);
   font-weight: 800;
 }
+
+
+/* Password validation */
+.password-validation {
+  display: none;
+  width: 100px;
+  font-size: 10px;
+  margin-top: 7px;
+}
+
+.password-validation p {
+  margin: 0;
+  margin-left: 5px;
+}
+
+.valid {
+  color: rgb(90, 255, 90);
+}
+
+.valid:before {
+  position: relative;
+  left: -5px;
+  content: "✓";
+}
+
+.invalid {
+  color: red;
+}
+
+.invalid:before {
+  position: relative;
+  left: -5px;
+  content: "";
+}
+
+#second-password {
+  color: black;
+}
+
+.match {
+  font-size: 10px;
+  position: relative;
+  top: 7px;
+  right: 35px;
+  display: none;
+}
+
+/* mobile */
+
+@media screen and (max-width: 800px)
+{
+  .left-side {
+    display: none;
+  }
+
+  .field-container {
+    width: auto;
+  }
+
+  .form input {
+    width: auto;
+  }
+
+  .right-side {
+    height: 100vh;
+  }
+
+}
